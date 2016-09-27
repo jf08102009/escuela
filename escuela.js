@@ -10,7 +10,10 @@ function acciondemibotton(tipo){
 		clicksalon(aula,piso)
 		break;
 		case 'c':
-		alert("Pulsaron el bonton coordin...")
+		var escuela = prompt("¿Nombre de la Escuela?");
+		var cant_ninos = prompt("¿Cantidad de Ninos?");
+		var cant_ninas=prompt("¿Cantidad de Niñas?");
+		clickDireccion(escuela,cant_ninos,cant_ninas)
 		break;
 		}
 	}
@@ -20,5 +23,10 @@ function clickmateria(nombre){
 	
 function clicksalon(piso,aula){
 	alert("El salon queda en el piso : "+piso+' aula '+aula )
+	}
+function clickDireccion(escuela,cant_ninos,cant_ninas){
+	
+	var r="La escuela : "+escuela+' tine inscrito  '+cant_ninos+' niños y '+cant_ninas+' niñas';
+	alert(r)
 	}
 
